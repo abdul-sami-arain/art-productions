@@ -1,0 +1,24 @@
+.project-categories-section{
+    display: flex;
+    width: 100%;
+    column-gap: 30px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+
+}
+
+@media only screen and (max-width: 480px){
+    .project-categories-section {
+        display: flex;
+        width: 100%;
+        column-gap: 5px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        padding: 0;
+    }
+}

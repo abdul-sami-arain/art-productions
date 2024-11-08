@@ -1,0 +1,114 @@
+.button-3 {
+    cursor: pointer;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    margin-top: 0;
+    transition: box-shadow .3s;
+    display: flex;
+    position: relative;
+    transform: none;
+    box-shadow: 0 0 34px rgba(0, 13, 255, .24);
+  }
+  
+  .button-3:hover {
+    box-shadow: none;
+  }
+  
+  .button-3:active {
+    box-shadow: 0 8px 30px rgba(0, 106, 255, .2);
+  }
+  
+  .button-3_color {
+    z-index: 1;
+    filter: blur(16px);
+    mix-blend-mode: normal;
+    background-image: linear-gradient(112deg, rgba(255, 15, 51, .84), rgba(255, 102, 0, .86));
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    top: -21px;
+    left: -14px;
+  }
+  
+  .button-3_color._1 {
+    background-image: linear-gradient(112deg, rgba(15, 243, 255, .84), rgba(0, 183, 255, .86));
+    top: -24%;
+    left: -11%;
+  }
+  
+  .button-3_color._2 {
+    background-image: linear-gradient(251deg, rgba(0, 4, 255, .84), rgba(177, 21, 255, .85));
+    top: -15%;
+    left: auto;
+    right: 54%;
+  }
+  
+  .button-3_color._3 {
+    background-image: linear-gradient(251deg, rgba(0, 4, 255, .84), rgba(177, 21, 255, .85));
+    top: 52%;
+    left: auto;
+    right: -27%;
+  }
+  
+  .button-3_color._4 {
+    background-image: linear-gradient(112deg, rgba(15, 243, 255, .84), rgba(0, 183, 255, .86));
+    top: 53%;
+    left: auto;
+    right: 5%;
+  }
+  
+  .button-3-bg {
+    z-index: 3;
+    background-color: #000;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 146px;
+    height: 56px;
+    transition: background-color .35s ease-in-out;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .button-3-bg:hover {
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    opacity: 1;
+  }
+  
+  .button-3:hover .button-3_color {
+    transform: scale(1.5); /* Add scaling animation */
+    opacity: 1; /* Make sure the opacity changes */
+}
+  .button-3_color-wrap {
+    z-index: 2;
+    filter: none;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .button-3_color-wrap.blur {
+    filter: blur(5px);
+    display: block;
+    overflow: hidden;
+  }
+
+
+  
+  .button-1, .button-3 {
+    transform: scale(1.15);
+  }

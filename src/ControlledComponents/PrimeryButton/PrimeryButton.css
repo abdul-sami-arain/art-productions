@@ -1,0 +1,39 @@
+.main-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 31px;
+    cursor: pointer;
+    background: linear-gradient(270.29deg, rgba(156, 202, 219, 0.24) 0.24%, rgba(2, 37, 50, 0.24) 99.76%);
+    gap: 10px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-button:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: var(--border-color) !important;
+}
+
+
+.main-button img{
+    height: 30px;
+    width: auto;
+}
+
+@media only screen and (max-width: 480px){
+    .main-button{
+        font-size: 14px !important;
+        line-height: 18px !important;
+        font-weight: 400 !important;
+        width: max-content !important;
+        height: max-content !important;
+        padding: 5px 10px !important;
+    }
+    .main-button img{
+        height: 14px;
+        width: auto;
+    }
+}
