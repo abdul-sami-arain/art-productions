@@ -17,9 +17,9 @@ const ServiceCard = ({backgroundColor, ind, projectDone, slideSection, justifyCo
         }}
     >
         <div className='service-poster' style={{justifyContent: justifyContent, padding: padding}}>
-            <div className={`service-poster-borders-1 ${ind === 0 || ind === 1 ? 'round-borders' : ''}`} onMouseEnter={handleOveerlayShow} onMouseLeave={handleOverlayHidden}>
+            <div className={`service-poster-borders-1 ${ind === -1 || ind === -1 ? 'round-borders' : ''}`} onMouseEnter={handleOveerlayShow} onMouseLeave={handleOverlayHidden}>
                 <img /* onMouseEnter={handleOveerlayShow} onMouseLeave={handleOverlayHidden} */ src={serviceBanner} alt='documentary'  />
-                <div className={`service-card-image-overlay ${ind === 0 || ind === 1 ? 'round-overlay' : '' } ${showOverlay ? 'show-overlay' : ''}`}>
+                <div className={`service-card-image-overlay ${ind === -1 || ind === -1 ? 'round-overlay' : '' } ${showOverlay ? 'show-overlay' : ''}`}>
                 <div className={`flesh-container ${showOverlay ? 'slide-flash' : ''}`}></div>
                     <p className={`service-overlay-head ${showOverlay ? 'transit-overlay-head' : ''}`}>We Have Completed</p>
                     <h3 className={`services-overlay-project-numbers ${showOverlay ? 'transit-service-overlay-product-completed' : ''}`}>{projectDone}</h3>

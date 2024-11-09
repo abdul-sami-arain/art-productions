@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import MainHeading from "../Utils/mainHeading";
 import Map from "../../Components/Map";
-import GoogleMap from "../../Components/Map2";
+import GoogleMap1 from "../../Components/Map2";
 
 export default function OurLocations() {
     const [selectedLocationId, setSelectedLocationId] = useState(null);
@@ -25,7 +25,7 @@ export default function OurLocations() {
             <MainHeading width={'95%'} align={'center'} gap={'10px'} flexDirection={'row'} content1={"Our"} content2={" Locations"} />
             <div className="map_parent_section">
                 <div className="map">
-                <GoogleMap/>
+                <GoogleMap1/>
                 </div>
                 <div className="locations_descriptions">
                     {locations.map((location) => (
