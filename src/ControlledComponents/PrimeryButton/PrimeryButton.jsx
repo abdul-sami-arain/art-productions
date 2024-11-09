@@ -24,6 +24,7 @@ const PrimeryButton = ({
         lineHeight: lineHeight,
         fontWeight: fontWeight,
         color: color,
+      
       }}
       onClick={navigateClick}
       >

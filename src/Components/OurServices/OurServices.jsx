@@ -12,6 +12,7 @@ import PrimeryButton from '../../ControlledComponents/PrimeryButton/PrimeryButto
 import { useNavigate } from 'react-router-dom';
 import Button3 from '../../GlobalComponents/button-style-2';
 import Button4 from '../../GlobalComponents/button3';
+import { TbLayoutDashboardFilled } from "react-icons/tb";
 const OurServices = () => {
     const servicesData = [
         {name: 'Video Production', checkName: 'Video Production', img: videoProductionImage, para: 'Through our long experience in this field, we were involved in many sections of video production.', gridClass: 'video-production'},
@@ -55,8 +56,8 @@ const OurServices = () => {
                 </div>
             ))}
         </div>
-        <div className='see-all-projects-section'>
-            <PrimeryButton 
+        <div className=''>
+            {/* <PrimeryButton 
                 text={'See All Projects'} 
                 width={'243px'} 
                 height={'55px'}
@@ -68,9 +69,12 @@ const OurServices = () => {
                 navigateClick={()=>{
                     navigate("/our-projects")
                 }}
-            />
+            /> */}
+              <Button4 text_1={"See All Services"} text_2={"See All Services"} iconComponent={TbLayoutDashboardFilled} width={"220px"}   navigateClick={()=>{
+                    navigate("/services")
+                }} />
         </div>
-        <Button4/>
+      
     </div>
   )
 }

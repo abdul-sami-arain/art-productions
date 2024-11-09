@@ -157,17 +157,18 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px;
-    border-radius: 15px;
+    padding: 14px 10px;
+    border-radius: 30px;
     background-color: transparent;
     box-shadow: none;
-    border: 1.5px solid var(--border-color);
-    width: 220px;
+    border: 2px solid var(--border-color);
+    /* width: 220px; */
     color: var(--border-color);
     overflow: hidden;
     position: relative;
     transition: color 0.4s ease;
     cursor: pointer;
+    background: linear-gradient(270.29deg, rgba(156, 202, 219, 0.24) 0.24%, rgba(2, 37, 50, 0.24) 99.76%);
 }
 
 .button4::before {
@@ -212,7 +213,7 @@
 }
 
 .button4:hover p {
-    transform: translateX(200px);
+    transform: translateX(260px);
 }
 
 .hidText {
@@ -243,4 +244,11 @@
     font-weight: 500;
     font-family: "Poppins";
     margin: 0 0 0 5px;
+}
+
+
+@media only screen and (max-width: 480px){
+    .button4{
+        padding: 6px 0 !important;
+    }
 }

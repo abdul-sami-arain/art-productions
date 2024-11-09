@@ -1,28 +1,44 @@
 .aboutUs {
     display: block;
     position: relative;
-    /* height: 582px; */
     width: 80%;
     border-radius: 30px;
     background: linear-gradient(138.84deg, rgba(255, 255, 255, 0.044) -6.39%, rgba(143, 143, 143, 0.021) 112.17%);
     display: flex;
     padding: 90px 60px;
     gap: 60px;
-    margin:  0 auto;
-
+    margin: 0 auto;
+    overflow: hidden;
 }
-.aboutUs .leftSection{
-    flex: 1px;
+
+.aboutUs .leftSection {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;justify-content: center;
+    align-items: flex-start;
+    justify-content: center;
     gap: 30px;
 }
-.aboutUs .rightSection{
-    flex: 1px;
+
+.aboutUs .rightSection {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Add animation for the image */
+.rightSection img {
+    width: 460px;
+    height: auto;
+    transform: translateX(100%); /* Start offscreen */
+    opacity: 0; /* Start hidden */
+    transition: transform 1s ease-out, opacity 1s ease-out; /* Smooth transition */
+}
+
+.aboutUs.in-view .rightSection img {
+    transform: translateX(0); /* Move into view */
+    opacity: 1; /* Fade in */
 }
 
 .aboutUs::before {
@@ -39,7 +55,6 @@
 }
 
 .aboutUs p {
-    /* font-family: 'Poppins'; */
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -47,21 +62,14 @@
 }
 
 .aboutUs > p > span {
-    /* font-family: 'Poppins'; */
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
     text-align: left;
-
 }
 
-.rightSection > img{
-    width: 460px;
-    height: auto;
-}
-
-@media only screen and (max-width: 480px){
-    .aboutUs{
+@media only screen and (max-width: 480px) {
+    .aboutUs {
         width: 90%;
         display: flex;
         flex-direction: column;
@@ -69,20 +77,23 @@
         align-items: center;
         justify-content: center;
     }
-    .aboutUs .leftSection{
+
+    .aboutUs .leftSection {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: center;
     }
-    .aboutUs p{
+
+    .aboutUs p {
         font-size: 12px;
         line-height: 18px;
         font-weight: 400;
         text-align: center;
     }
-    .aboutUs .rightSection{
+
+    .aboutUs .rightSection {
         display: flex;
         width: 100%;
         align-items: center;

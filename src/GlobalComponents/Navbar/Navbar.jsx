@@ -4,6 +4,7 @@ import './Navbar.css';
 import logo from '../../Assets/logos/logo.png';
 import humbergerIcon from '../../Assets/icons/humberger-icon.png';
 import PrimeryButton from '../../ControlledComponents/PrimeryButton/PrimeryButton';
+import Button4 from '../button3';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(0);
@@ -62,8 +63,9 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className='navbar-contact-btn-section'>
-                    <PrimeryButton
-                        text={'Contact Us'}
+                    <Button4
+                        text_1={'Contact Us'}
+                        text_2={'Contact Us'}
                         width={'173px'}
                         height={'50px'}
                         fontSize={'18px'}

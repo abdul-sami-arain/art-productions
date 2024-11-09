@@ -11,12 +11,18 @@
     justify-content: space-between;
     /* background-color: #022532; */
      background: rgba(2, 37, 54, 0.2);
-    width: 100%;
+    width: 80%;
     height: auto;
     padding: 12px 30px;
     border-radius: 38px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(25px)
+    backdrop-filter: blur(25px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+    z-index: 9999999999;
 
 }
 

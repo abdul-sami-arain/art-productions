@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Portfolio.css';
 import PrimeryButton from '../../ControlledComponents/PrimeryButton/PrimeryButton';
 import surviveImage from '../../Assets/portfolio/survival-story-image.png'
@@ -9,6 +9,9 @@ import interviewImage from '../../Assets/portfolio/interview.png';
 import ProductCategories from '../../Components/ProductCategory/ProductCategories';
 import SingleProject from '../../Components/SingleProject/SingleProject';
 import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
+import Button4 from '../../GlobalComponents/button3';
+import { AiFillFire } from "react-icons/ai";
+import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
   
@@ -30,7 +33,12 @@ const Portfolio = () => {
         {img: videoGRaphyImage, tag: 'Commercial', chanel: 'Al Jazeera', projectTitle: 'The Strugle of Survival', videoId: '759468445'},
         {img: interviewImage, tag: 'Commercial', chanel: 'Al Jazeera', projectTitle: 'The First Documentary', videoId: '759468445'},
     ]
+    const navigate = useNavigate();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
+    
     <div className='project-main-container'>
         <ProductCategories />
       <div className='projects-display'>
@@ -45,7 +53,7 @@ const Portfolio = () => {
         ))}
       </div>
       <div className='see-all-project-btn-div'>
-        <PrimeryButton 
+        {/* <PrimeryButton 
           text={'See All Projects'} 
           width={'243px'} 
           height={'50px'} 
@@ -55,7 +63,17 @@ const Portfolio = () => {
           fontWeight={'400'}
           color={'#fff'}
           arrowTrue={true}
-        />
+        /> */}
+          <Button4 
+                    text_1={"See All Projects"} 
+                    text_2={"See All Projects"} 
+                    iconComponent={AiFillFire} 
+                    width={"265px"}   
+                    navigateClick={() => {
+                        navigate("/our-projects")
+                    }} 
+                    height={"55px"}
+                />
       </div>
       {/* <ContactForm 
         titleOne={`Let's Create and`}

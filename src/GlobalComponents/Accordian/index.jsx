@@ -17,7 +17,7 @@ export default function Accordian({question,answer}) {
             <div className={`arrow ${isOpen ? "rotate" : ""}`}>
                 <img src={arrow} alt="arrow" />
             </div>
-            <p className="question">How much does video production cost?</p>
+            <p className={`question ${isOpen ? "open" : ""}`}>How much does video production cost?</p>
             <p className="answer">How much does video production cost How much does video production cost How much does video production cost How much does video production cost </p>
         </div>
     );

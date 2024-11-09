@@ -1,10 +1,15 @@
 import React from "react";
 import "./style.css";
 import MainHeading from "../../GlobalComponents/Utils/mainHeading";
+import Button4 from "../../GlobalComponents/button3";
+import { TbLayoutDashboardFilled } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
 
 export default function Marquee1() {
+    const navigate = useNavigate();
     return (
-        <div className="marquee1">
+         <div className="main_marquee">
+            <div className="marquee1">
             <MainHeading width={'95%'} gap={'10px'} flexDirection={'row'} margin={"0 0 20px 0"} content1={"Our "} content2={"Highlights"} />
             <div className="slider_marquee">
                 <div className="video_frame">
@@ -48,6 +53,16 @@ export default function Marquee1() {
 
                 </div>
             </div>
+           
         </div>
+        <Button4 
+            text_1={"See All Projects"} 
+            text_2={"See All Projects"} 
+            iconComponent={TbLayoutDashboardFilled} 
+            width={"220px"}   
+            navigateClick={()=>{
+                    navigate("/our-projects")
+                }} />
+         </div>
     )
 }

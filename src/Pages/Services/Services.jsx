@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useEffect}from 'react'
 import './Services.css'
 import documentaryImage from '../../Assets/services/documentaries.png'
 import interviewImage from '../../Assets/services/interview.png'
@@ -104,6 +104,9 @@ const Services = () => {
             the film on all different platforms on the internet`, projectCount: '60+'
         },
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   return (
     <div className='services-main-section'>
         {servicesData.map((items, index) => (

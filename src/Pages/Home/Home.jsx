@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Home.css';
 // import Navbar from '../../GlobalComponents/Navbar/Navbar';
 import PerformanceCount from '../../GlobalComponents/PerformanceCount/PerformanceCount';
@@ -21,7 +21,9 @@ import OurLocations from '../../GlobalComponents/OurLocations/location';
 import Map from '../../Components/Map';
 
 const Home = () => {
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
         <PerformanceCount />
