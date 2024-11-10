@@ -10,11 +10,11 @@ import mbc from "../../Assets/logos/mbc.png";
 
 export default function OurPartners() {
     const images = [
-        orient,
-        alarby,
         logo,
-        mbc,
-        skynews,
+        logo,
+        logo,
+        logo,
+        logo,
         logo,
         logo,
         logo,
