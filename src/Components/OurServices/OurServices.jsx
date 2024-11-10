@@ -15,13 +15,13 @@ import Button4 from '../../GlobalComponents/button3';
 import { TbLayoutDashboardFilled } from "react-icons/tb";
 const OurServices = () => {
     const servicesData = [
-        {name: 'Video Production', checkName: 'Video Production', img: videoProductionImage, para: 'Through our long experience in this field, we were involved in many sections of video production.', gridClass: 'video-production'},
-        {name: 'Documentries', img: documentriesImage, para: 'Through our long experience in this field.', gridClass: 'documentaries'},
-        {name: 'Creative Interview', img: creativeInterviewImage, para: 'Through our long experience in this field, we were involved in many sections of video production.', gridClass: 'creative-interview'},
-        {name: 'Commercial & Advertisiment', img: commercialImage, para: 'Through our long experience in this field.', gridClass: 'commercial'},
-        {name: 'Event Management', img: eventManagmentImage, para: 'Through our long experience in this field, we were involved in many sections of video production.', gridClass: 'event-managment'},
-        {name: 'Short Films', img: shortFilmImage, para: 'Through our long experience in this field, we were involved in many sections of video production.', gridClass: 'short-films'},
-        {name: 'Markeeting', img: markeetingImage, para: 'Through our long experience in this field, we were involved in many sections of video production.', gridClass: 'markeeting'},
+        {name: 'Video Production', checkName: 'Video Production', img: videoProductionImage, para: 'We transform ideas into compelling video content, from script to screen, with precision and creativity.', gridClass: 'video-production'},
+        {name: 'Documentaries', img: documentriesImage, para: 'Bringing real stories to life, we create documentaries that inform, inspire, and captivate audiences.', gridClass: 'documentaries'},
+        {name: 'Creative Interview', img: creativeInterviewImage, para: 'Our creative interviews capture authentic voices and perspectives, engaging viewers with impactful storytelling.', gridClass: 'creative-interview'},
+        {name: 'Commercial & Advertisement', img: commercialImage, para: 'Eye-catching and memorable, our commercials spotlight your brand and resonate with your target audience.', gridClass: 'commercial'},
+        {name: 'Event Management', img: eventManagmentImage, para: 'We plan, coordinate, and execute events seamlessly, turning your vision into an unforgettable experience.', gridClass: 'event-managment'},
+        {name: 'Short Films', img: shortFilmImage, para: 'With artistry and attention to detail, our short films evoke emotion and connect meaningfully with viewers.', gridClass: 'short-films'},
+        {name: 'Marketing', img: markeetingImage, para: 'We create smart marketing plans that help your brand stand out and connect with the right audience.', gridClass: 'markeeting'},
 
     ]
     const [currentIndex, setCurrentIndex] = useState(null)

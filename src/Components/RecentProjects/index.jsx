@@ -7,9 +7,10 @@ import 'swiper/css/navigation';
 import './style.css';
 import MainHeading from '../../GlobalComponents/Utils/mainHeading';
 import alJazeeraLogo from '../../Assets/logos/aljazeera.png';
-import img1 from "../../Assets/recent-projects/img1.jpg";
-import img2 from "../../Assets/recent-projects/img2.jpg";
-import img3 from "../../Assets/recent-projects/img3.jpg";
+import img1 from "../../Assets/recent-projects/recent-1.jpeg";
+import img2 from "../../Assets/recent-projects/recent-2.jpg";
+import img3 from "../../Assets/recent-projects/recent-3.jpg";
+import img4 from "../../Assets/recent-projects/recent-4.jpeg";
 import PlayIcon from '../../GlobalComponents/Play-button-1';
 import { Autoplay, Pagination } from 'swiper/modules';
 
@@ -23,29 +24,29 @@ export default function RecentProjects() {
         {
             logo: alJazeeraLogo,
             bg: img1,
-            title: 'Abdo Madkhana',
-            sub_title: 'MANAGER AL JAZEERA',
-            vimeoId: '759468445'
-        },
-        {
-            logo: alJazeeraLogo,
-            bg: img3,
-            title: 'Abdo Madkhana',
-            sub_title: 'MANAGER AL JAZEERA',
-            vimeoId: '737273982'
+            title: '300 Days in Isreal',
+            sub_title: 'AL JAZEERA',
+            vimeoId: '737099444'
         },
         {
             logo: alJazeeraLogo,
             bg: img2,
-            title: 'Abdo Madkhana',
-            sub_title: 'MANAGER AL JAZEERA',
-            vimeoId: '772986559'
+            title: 'Battle of Survival',
+            sub_title: 'AL JAZEERA',
+            vimeoId: '489755949'
         },
         {
             logo: alJazeeraLogo,
-            bg: img1,
-            title: 'Abdo Madkhana',
-            sub_title: 'MANAGER AL JAZEERA',
+            bg: img3,
+            title: 'Guardian of Democracy',
+            sub_title: 'AL JAZEERA',
+            vimeoId: '225090240'
+        },
+        {
+            logo: alJazeeraLogo,
+            bg: img4,
+            title: 'Peace Underground',
+            sub_title: 'AL JAZEERA',
             vimeoId: '737117181'
         },
     ];

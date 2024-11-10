@@ -6,6 +6,7 @@ import PlayIcon from "../../GlobalComponents/Play-button-1";
 import Button4 from "../../GlobalComponents/button3";
 import { AiFillFire } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import about_2 from "../../Assets/about/about_2.jpg"
 
 
 export default function ServiceCard2() {

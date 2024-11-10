@@ -6,6 +6,7 @@
     width: 80%;
     padding: 100px 0;
     margin: 0 auto;
+
 }
 
 .our_partners_logos{
@@ -14,13 +15,14 @@
     grid-gap: 10px; 
     /* width: 80%; */
     margin: 0 auto;
+    gap: 40px;
 }
 
 
 .our_partners_logos img {
-    width: 70%;
+    width: 160px;
     height: auto; 
-    object-fit: contain; 
+    object-fit: cover; 
     margin: 0 auto;
     filter: grayscale(1);
     opacity: 0.5; 

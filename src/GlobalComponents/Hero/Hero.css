@@ -130,9 +130,9 @@
         height: 530px;
     }
 
-    .hero-video {
-        display: none; /* Hides the video on mobile */
-    }
+    /* .hero-video {
+        display: none; 
+    } */
 
     .hero-overlay-text {
         gap: 10px;

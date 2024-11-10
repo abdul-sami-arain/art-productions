@@ -35,7 +35,7 @@ const MainContaint = () => {
   const heroContant = {
     '/': {
       welcomText: 'Welcome To Art Production',
-      mainHeading: 'Innovating Art, Inspiring Creativity',
+      mainHeading: 'Award Winning Video Production Company.',
       heroDesc: '',
       img:bg1
     },

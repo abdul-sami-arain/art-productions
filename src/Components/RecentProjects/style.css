@@ -36,6 +36,7 @@
     font-size: 28px;
     font-weight: 700;
     color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .title_subtitle h3{
     line-height: 24px;

@@ -3,7 +3,7 @@ import './ServiceCard.css';
 // import documentaryImage from '../../Assets/services/documentaries.png'
 // import aos from 'aos';
 
-const ServiceCard = ({backgroundColor, ind, projectDone, slideSection, justifyContent, padding, flexDirection, serviceBanner, serviceHeading, serviceHeadingTwo, paraOne, paraTwo}) => {
+const ServiceCard = ({backgroundColor, ind, projectDone, slideSection, justifyContent, padding, flexDirection, serviceBanner, serviceHeading, serviceHeadingTwo, paraOne, paraTwo,paraThree}) => {
     const [showOverlay, setShowOverlay] = useState(false)
     const handleOveerlayShow = () => {setShowOverlay(true)}
     const handleOverlayHidden = () => {setShowOverlay(false)}
@@ -37,6 +37,7 @@ const ServiceCard = ({backgroundColor, ind, projectDone, slideSection, justifyCo
             </span>
             <p>{paraOne}</p>
             <p>{paraTwo}</p>
+            <p>{paraThree}</p>
         </div>
     </div>
   )

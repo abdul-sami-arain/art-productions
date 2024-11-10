@@ -43,34 +43,29 @@ export default function SwiperSlider() {
     
     const storiesData = [
         {
-            logo: alJazeeraLogo, post: `The teams that worked on our projects on location and in 
-                premise have been very professional and flexible and we always get exactly what 
-                we are looking for, if not more`,
-            name: 'Abdo Madkhana', position: 'MANAGER AL JAZEERA'
+            logo: alJazeeraLogo, post: `Art Production® transformed our project at Al Jazeera with their creative vision. Their ability to
+deliver high-quality, impactful documentaries is unparalleled.`,
+            name: 'Ahmad', position: 'Creative Head at Al Jazeera'
         },
         {
-            logo: alJazeeraLogo, post: `The teams that worked on our projects on location and in 
-                premise have been very professional and flexible and we always get exactly what 
-                we are looking for, if not more`,
-            name: 'Abdo Madkhana', position: 'MANAGER AL JAZEERA'
+            logo: alJazeeraLogo, post: `Working with Art Production® on Mahgarcom was an absolute pleasure. Their innovative approach
+and dedication to quality made a huge difference to our project at Orient TV.`,
+            name: 'Zainab Al-Mansoori', position: 'Creative Head at Orient TV'
         },
         {
-            logo: alJazeeraLogo, post: `The teams that worked on our projects on location and in 
-                premise have been very professional and flexible and we always get exactly what 
-                we are looking for, if not more`,
-            name: 'Abdo Madkhana', position: 'MANAGER AL JAZEERA'
+            logo: alJazeeraLogo, post: `Art Production® elevated our documentary Guardians of Democracy with their exceptional
+storytelling and attention to detail. Abdos leadership ensures every project is executed flawlessly.`,
+            name: 'Mohammed Aziz', position: 'Program Director at Al-Arabiya TV'
         },
         {
-            logo: alJazeeraLogo, post: `The teams that worked on our projects on location and in 
-                premise have been very professional and flexible and we always get exactly what 
-                we are looking for, if not more`,
-            name: 'Abdo Madkhana', position: 'MANAGER AL JAZEERA'
+            logo: alJazeeraLogo, post: `The production of Out of the Place with Art Production® was a true success. Their creativity and
+professionalism delivered exceptional results under tight deadlines.`,
+            name: 'Nadia El-Sayed', position: 'Executive Producer at Syrian TV'
         },
         {
-            logo: alJazeeraLogo, post: `The teams that worked on our projects on location and in 
-            premise have been very professional and flexible and we always get exactly what 
-            we are looking for, if not more`,
-            name: 'Abdo Madkhana', position: 'MANAGER AL JAZEERA'
+            logo: alJazeeraLogo, post: `Art Production® brought our documentary Peace Underground to life with remarkable attention to
+detail. Their expertise in telling powerful, untold stories is second to none.`,
+            name: 'Omar Khalil', position: 'Content Director at MBC TV'
         },
 
     ]

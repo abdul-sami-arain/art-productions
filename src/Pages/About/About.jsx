@@ -15,6 +15,8 @@ import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
 import Button4 from '../../GlobalComponents/button3';
 import { AiFillFire } from "react-icons/ai";
 import SEO from '../../Components/SEO';
+import about from "../../Assets/about/about.jpg"
+import about_1 from "../../Assets/about/about_1.jpg"
 
 
 const About = () => {
@@ -83,11 +85,11 @@ const About = () => {
           onMouseEnter={() => handleIntroHoverTrue(1)}
           onMouseLeave={handleIntroHoverFalse}  
         >
-          <img src={image1} alt="" />
+          <img src={about} alt="" />
           <div className={`intro-content-overlay ${introHovered === 1 ? 'show-intro-overlay' : ''}`}>
             <div className={`flesh-container ${introHovered ? 'slide-flash' : ''}`}></div>
-              <h3 className={`intro-overlay-hours ${introHovered ? 'show-intro-hover-hours' :''}`}>17+</h3>
-              <p className={`intro-overlay-hover-text ${introHovered ? 'show-intro-overlay-text' : ''}`}>Years of Exeriance</p>
+              <h3 className={`intro-overlay-hours ${introHovered ? 'show-intro-hover-hours' :''}`}>20+</h3>
+              <p className={`intro-overlay-hover-text ${introHovered ? 'show-intro-overlay-text' : ''}`}>Years of Experience</p>
           </div>
         </div>
 
@@ -114,11 +116,11 @@ const About = () => {
         onMouseEnter={() =>handleIntroHoverTrue(2)}
         onMouseLeave={handleIntroHoverFalse}
       >
-          <img src={image1} alt="" />
+          <img src={about_1} alt="" />
           <div className={`intro-content-overlay ${introHovered === 2 ? 'show-intro-overlay' : ''}`}>
             <div className={`flesh-container ${introHovered ? 'slide-flash' : ''}`}></div>
-              <h3 className={`intro-overlay-hours ${introHovered ? 'show-intro-hover-hours' :''}`}>30772+</h3>
-              <p className={`intro-overlay-hover-text ${introHovered ? 'show-intro-overlay-text' : ''}`}>Work Hours Completed</p>
+              <h3 className={`intro-overlay-hours ${introHovered ? 'show-intro-hover-hours' :''}`}>234+</h3>
+              <p className={`intro-overlay-hover-text ${introHovered ? 'show-intro-overlay-text' : ''}`}>Projects Completed</p>
           </div>
         </div>
 
@@ -129,7 +131,7 @@ const About = () => {
           justifyContent:"center",
           flex:"1"
         }}>
-           <p>Why do our clients choose us? Because we infuse every project with creativity and enthusiasm. We’re not just another production house; we’re your creative collaborators, making the entire process enjoyable and exciting.</p>
+           <p><span style={{fontWeight:"600"}}>Why do our clients choose us?</span> Because we infuse every project with creativity and enthusiasm. We’re not just another production house; we’re your creative collaborators, making the entire process enjoyable and exciting.</p>
            <div style={{height:"20px"}}></div>
            <p>With us, you get more than just a video—you get a team that’s passionate about turning your vision into a captivating experience. So, why Art Production®? Because we don’t just deliver; we delight, inspire, and exceed expectations. Let’s make something extraordinary together.</p>
         </div>
