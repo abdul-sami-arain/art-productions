@@ -14,6 +14,7 @@ import FAQs from '../../GlobalComponents/FAQs';
 import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
 import Button4 from '../../GlobalComponents/button3';
 import { AiFillFire } from "react-icons/ai";
+import SEO from '../../Components/SEO';
 
 
 const About = () => {
@@ -42,6 +43,12 @@ const About = () => {
   return (
    
   <>
+  <SEO 
+                title="About - Art Productions" 
+                description="Art Productions" 
+                keywords="art, productions" 
+                author="Three Mean"
+          />
     <div>
     <PerformanceCount/>
     </div>

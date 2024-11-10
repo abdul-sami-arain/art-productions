@@ -9,6 +9,7 @@ import AllRoutes from './utils/routes';
 import  AOS  from 'aos';
 import 'aos/dist/aos.css';
 import bg1 from "../src/Assets/bg1.png"
+import { HelmetProvider } from 'react-helmet-async';
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
   }, []);
 
   return (
-    <MainContaint />
+    <HelmetProvider>
+<MainContaint />
+    </HelmetProvider>
   );
 }
 

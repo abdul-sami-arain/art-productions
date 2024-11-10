@@ -5,6 +5,7 @@ import interviewImage from '../../Assets/services/interview.png'
 import ServiceCard from '../../Components/ServiceCard/ServiceCard'
 import FAQs from '../../GlobalComponents/FAQs'
 import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk'
+import SEO from '../../Components/SEO'
 
 const Services = () => {
     const servicesData = [
@@ -108,6 +109,13 @@ const Services = () => {
         window.scrollTo(0, 0);
       }, []);
   return (
+<>
+<SEO 
+    title="Services - Art Productions" 
+    description="Art Productions" 
+    keywords="art, productions" 
+    author="Three Mean"
+/>
     <div className='services-main-section'>
         {servicesData.map((items, index) => (
             <ServiceCard
@@ -130,6 +138,8 @@ const Services = () => {
         <FAQs />
         <ReadyToAsk />
     </div>
+
+</>
   )
 }
 

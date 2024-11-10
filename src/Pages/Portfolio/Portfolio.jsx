@@ -12,6 +12,7 @@ import ReadyToAsk from '../../GlobalComponents/ReadyToAsk/ReadyToAsk';
 import Button4 from '../../GlobalComponents/button3';
 import { AiFillFire } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
+import SEO from '../../Components/SEO';
 
 const Portfolio = () => {
   
@@ -38,7 +39,13 @@ const Portfolio = () => {
       window.scrollTo(0, 0);
     }, []);
   return (
-    
+     <>
+       <SEO 
+    title="Projects - Art Productions" 
+    description="Art Productions" 
+    keywords="art, productions" 
+    author="Three Mean"
+/>
     <div className='project-main-container'>
         <ProductCategories />
       <div className='projects-display'>
@@ -81,6 +88,7 @@ const Portfolio = () => {
       /> */}
       <ReadyToAsk />
     </div>
+     </>
   )
 }
 
