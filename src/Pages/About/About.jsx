@@ -60,7 +60,7 @@ const About = () => {
         style={{
           display:"flex"
         }}
-        data-aos={'slide-right'}
+        // data-aos={'slide-right'}
       >
         <div style={{
           display:"flex",
@@ -100,7 +100,7 @@ const About = () => {
         style={{
           display:"flex"
         }}
-        data-aos={'slide-left'}
+        // data-aos={'slide-left'}
       >
         
         <div style={{
