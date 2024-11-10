@@ -52,7 +52,7 @@
     height: 100%;
     align-items: center;
     justify-content: start;
-    padding: 0 100px;
+    padding: 60px 100px 0 100px;
 }
 
 .hero-overlay h1 {

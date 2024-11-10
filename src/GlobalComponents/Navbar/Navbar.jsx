@@ -15,7 +15,6 @@ const Navbar = () => {
         { name: 'About', link: '/about-us' },
         { name: 'Portfolio', link: '/our-projects' },
         { name: 'Services', link: '/services' },
-        // { name: 'Vemeo', link: '/vemeo-videos' },
     ];
     
     const location = useLocation();
@@ -27,9 +26,14 @@ const Navbar = () => {
     };
     
     useEffect(() => {
-        const currentIndex = navLinks.findIndex(item => item.link === location.pathname);
-        setIsActive(currentIndex !== -1 ? currentIndex : 0); // Default to first item if not found
+        if (location.pathname === '/contact-us') {
+            setIsActive(-1); // Set isActive to -1 for "Contact Us" page
+        } else {
+            const currentIndex = navLinks.findIndex(item => item.link === location.pathname);
+            setIsActive(currentIndex !== -1 ? currentIndex : 0); // Default to first item if not found
+        }
     }, [location.pathname, navLinks]);
+    
 
     const handleNavOpen = () => {
         setNavOpen(!navOpen);

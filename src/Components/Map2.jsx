@@ -105,19 +105,24 @@ import glowIcon from "../Assets/glowIcon.png"
 
 const containerStyle = {
   width: '100%',
-  height: '450px',
+  height: '100%',
+  borderRadius: '11px'
 };
 
 const center = {
-  lat: 37.7749,
-  lng: -122.4194, // San Francisco
+  lat: 48.8566,
+  lng: 2.3522, // San Francisco
 };
 
 const locations = [
-  { lat: 37.7749, lng: -122.4194, title: "San Francisco" },
-  { lat: 37.8044, lng: -122.2712, title: "Oakland" },
-  { lat: 37.6879, lng: -122.4702, title: "Daly City" }
+  { lat: 29.3759, lng: 47.9774, title: "Kuwait" },
+  { lat: 48.8566, lng: 2.3522, title: "Paris" },
+  { lat: 52.3676, lng: 4.9041, title: "Amsterdam" },
+  { lat: 41.0082, lng: 28.9784, title: "Istanbul" },
+  { lat: 38.9072, lng: -77.0369, title: "Washington" },
+  { lat: 51.5074, lng: -0.1278, title: "London" }
 ];
+
 
 const darkTheme = [
   {
@@ -306,7 +311,7 @@ const GoogleMap1 = () => {
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}
-          zoom={10}
+          zoom={5}
           options={{
             styles:darkTheme
           }}
