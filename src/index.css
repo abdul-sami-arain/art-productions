@@ -22,3 +22,13 @@ body{
   background-color: #01141D;
   font-family: "Poppins", sans-serif;
 }
+
+/* .scene-container{
+  width: 500px !important;
+  height: 300px !important;
+}
+
+.scene-container > canvas {
+  width: 500px !important;
+  height: 300px !important;
+} */

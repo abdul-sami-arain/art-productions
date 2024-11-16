@@ -20,13 +20,14 @@ import OurLocations from '../../GlobalComponents/OurLocations/location';
 // import GlideSlder from '../../Components/RecentProjects/GlideSlider';
 import Map from '../../Components/Map';
 import SEO from '../../Components/SEO';
-
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
+
+
         <SEO 
                 title="Home - Art Productions" 
                 description="Art Productions" 
@@ -40,7 +41,7 @@ const Home = () => {
         <OurServices />
         <AboutUs/>
         <OurPartners/>
-        <OurTeam/>
+        {/* <OurTeam/> */}
         <SwiperSlider/>
         <OurLocations/>
         <FAQs/>
